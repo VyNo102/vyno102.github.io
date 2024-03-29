@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>gift for suzii</title>
+<style>
+  body {
+    background-color: black;
+    color: white;
+  }
+
+  .text {
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+    display: block;
+    font-size: 25px; /* Hiển thị dòng chữ trên cùng 1 dòng */
+  }
+</style>
+</head>
+<body>
+<div id="text1" class="text">Nghe suzii nói thích cái này lắmmmm</div>
+<div id="text2" class="text">Nên thủ khoa Trần sẽ chiều suzii nhoaa</div>
+<div id="text3" class="text">Tèn tennn</div>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function() {
+    var text1 = document.getElementById('text1');
+    var text2 = document.getElementById('text2');
+    var text3 = document.getElementById('text3');
+    
+    setTimeout(function() {
+      text1.style.opacity = '1'; // Hiện dần lên
+    }, 1000); // Sau 1 giây
+    
+    setTimeout(function() {
+      text1.style.opacity = '0'; // Biến mất dần đi
+      text2.style.opacity = '1'; // Hiện dần lên
+    }, 3000); // Sau 3 giây
+
+    setTimeout(function() {
+      text2.style.opacity = '0'; // Biến mất dần đi
+      text3.style.opacity = '1'; // Hiện dần lên
+    }, 5000); // Sau 5 giây
+
+    setTimeout(function() {
+      window.location.href = 'index.html'; // Điều hướng đến trang HTML mới
+    }, 7000); // Sau 7 giây
+  });
+</script>
+</body>
+</html>
